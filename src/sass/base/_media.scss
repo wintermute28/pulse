@@ -6,7 +6,17 @@
     .container {
         width: 90%;
     }
+    .carousel {
+        &__inner {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
+
+
 
 @media (max-width: 767px) {
     .header {
@@ -41,7 +51,7 @@
         padding-top: 70px;
         padding-bottom: 70px;
     }
-    
+
 }
 
 @media (max-width: 575px) {
@@ -117,5 +127,10 @@
 
     .feed-form {
         width: 100%;
+    }
+
+    .slick-dots button {
+        width: 50%;
+        height: 50%;
     }
 }
