@@ -1,5 +1,7 @@
 @media (max-width: 1200px) {
-
+    .catalog__content {
+        justify-content: space-around;
+    }
 }
 
 @media (max-width: 991px) {
@@ -52,6 +54,10 @@
         padding-bottom: 70px;
     }
 
+    .catalog__tab {
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -86,6 +92,18 @@
         }
 
     }
+    .advantages {
+        padding-bottom: 40px;
+        &__items {
+            margin-top: 30px;
+        }
+        &__subtitle {
+           margin-top: 10px; 
+        }
+        &__descr {
+            padding-bottom: 20px;
+        }
+    }
 
     .button {
         width: 120px;
@@ -103,7 +121,7 @@
     }
     
     .title {
-        font-size: 22px;
+        font-size: 19px;
     }
 
     .title_left {
@@ -111,9 +129,10 @@
     }
 
     .consultation {
+        padding-top: 40px;
         &__descr {
-            padding-top: 40px;
-            font-size: 18px;
+            padding-top: 30px;
+            font-size: 16px;
             text-align: center;
         }
     }
@@ -132,5 +151,40 @@
     .slick-dots button {
         width: 50%;
         height: 50%;
+    }
+    
+    .carousel {
+        padding: 40px 0;
+    }
+
+    .catalog {
+        &__tabs {
+            margin-top: 20px;
+            flex-direction: column;
+        }
+
+        &__tab {
+            width: 180px;
+            height: 30px;
+            margin: 2px 0;
+            div {
+                line-height: 28px;
+            }
+        }
+
+        &__content {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        &-item {
+            padding: 20px 10px 26px 10px;
+            &__old-price {
+                font-size: 11px;
+            }
+            &__price {
+                font-size: 14px;
+            }
+        }
     }
 }

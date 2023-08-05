@@ -38,15 +38,18 @@
     }
     &__content {
         margin-top: 60px;
-        display: flex;
+        display: none;
         justify-content: space-between;
         flex-wrap: wrap;
+        &_active {
+            display: flex;
+        }
     }
     &-item {
         width: 300px;
         min-height: 440px;
         border: 2px solid #e8e8e8;
-        padding: 20px 20px 26px 20px;
+        padding: 20px 10px 26px 10px;
         overflow: hidden; // Что бы исчезало окно, которое не влезает в контент
         margin-bottom: 20px;
         &__img {
@@ -146,6 +149,21 @@
                     left: -14px;
                     top: 7px;
                 }
+            }
+        }
+        &__back {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(calc(-50% - 19px));
+            display: block;
+            color: $main-color;
+            font-size: 14px;
+            font-weight: 500;
+            text-decoration: underline;
+            text-transform: uppercase;
+            &:hover {
+                color: $main-color;
             }
         }
     }
