@@ -256,4 +256,24 @@
             }
         }
     }
+
+    .modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        min-height: 400px;
+        padding: 30px 30px 30px 30px;
+        &__close {
+            top: 8px;
+            right: 8px;
+        }
+        &__subtitle {
+            font-size: 16px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+    }
 }
