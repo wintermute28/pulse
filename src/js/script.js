@@ -55,7 +55,7 @@ $(document).ready(function(){
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
 
-      
+
       //Modal
 
       $('[data-modal=consultation]').on('click', function() {
@@ -110,6 +110,8 @@ $(document).ready(function(){
       valideForms('#consultation-form');
       valideForms('#order form');
       valideForms('#consultation form');
+
+      $('input[name=phone]').mask("+7 (999) 999-99-99");
 
   });
 
