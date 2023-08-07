@@ -16,6 +16,14 @@
             }
         }
     }
+
+    .footer {
+        &__info {
+            width: 400px;
+            height: 235px;
+            padding-top: 25px;
+        }
+    }
 }
 
 
@@ -56,6 +64,23 @@
 
     .catalog__tab {
         font-size: 15px;
+    }
+
+    .footer {
+        &__info {
+            width: 375px;
+            height: 215px;
+            padding-top: 25px;
+        }
+        &__addr {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    
+        &__phone {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
     }
 
 }
@@ -208,6 +233,27 @@
         }
         hr {
             margin: 15px 0;
+        }
+    }
+
+    .footer {
+        &__info {
+            height: 180px;
+        }
+        &__addr {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        &__phone {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        &__sosial-item {
+            width: 40px;
+            height: 40px;
+            img {
+                height: 20px;
+            }
         }
     }
 }
