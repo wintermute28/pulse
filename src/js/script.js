@@ -55,6 +55,7 @@ $(document).ready(function(){
       toggleSlide('.catalog-item__link');
       toggleSlide('.catalog-item__back');
 
+      
       //Modal
 
       $('[data-modal=consultation]').on('click', function() {
@@ -76,6 +77,39 @@ $(document).ready(function(){
         })
       });
       
+
+      // Validation
+
+      function valideForms(form) {
+        $(form).validate({
+          rules: {
+            name: {
+              required: true,
+              minlength: 2
+            },
+            phone:"required",
+            email:{
+              required: true,
+              email: true
+            }
+          },
+          messages: {
+            name: {
+              required: "Пожалуйста введите свое имя",
+              minlength: jQuery.validator.format("Введите {0} символа")
+            },
+            phone:"Пожалуйста введите номер телефона",
+            email: {
+              required: "Пожалуйста введите свой e-mail",
+              email: "Неправильно введен e-mail адрес"
+            }
+          }
+        });
+      };
+
+      valideForms('#consultation-form');
+      valideForms('#order form');
+      valideForms('#consultation form');
 
   });
 
