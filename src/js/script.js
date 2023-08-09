@@ -46,14 +46,14 @@ $(document).ready(function(){
           $(this).on('click', function(e) {
             e.preventDefault();
             $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active');
-            $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+            $('.catalog-item__more').eq(i).toggleClass('catalog-item__more_active');
           })
         });
       };
 
 
       toggleSlide('.catalog-item__link');
-      toggleSlide('.catalog-item__back');
+      toggleSlide('.catalog-item__more__back');
 
 
       //Modal
@@ -151,13 +151,16 @@ $(document).ready(function(){
 
       //Smooth scrol(по умолчанию есть в бутстреп мин цсс, поэтому необязателен)
 
-      $('a[href^="#"').on('click', function() {
+      $('a[href^="#up"').on('click', function() {
         let href = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(href).offset().top
         });
         return false;
     });
+
+
+    new WOW().init();
 
   });
 
