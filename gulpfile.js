@@ -60,7 +60,7 @@ gulp.task('mailer', function () {
 });
 
 gulp.task('images', function () {
-    return gulp.src("src/img/**/*")
+    return gulp.src("src/img/**/*.+(jpg|png|jpeg)")
         .pipe(imagemin())
         .pipe(gulp.dest("dist/img"));
 });
